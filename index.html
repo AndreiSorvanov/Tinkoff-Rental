@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/components/currentYear.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <title>Тинькофф Прокат</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <h1 class="visually-hidden">Тинькофф Прокат</h1>
+          <a class="logo" href="." aria-label="Логотип">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main search_active search_live">
+      <div class="search">
+        <form
+          class="search__form"
+          action=""
+          method=""
+          role="search"
+          name="search"
+        >
+          <div class="container">
+            <div class="search__form-container">
+              <span class="search__icon-container" aria-hidden="true">
+                <svg
+                  viewBox="0 0 34 33"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24 14C24 19.5228 19.5228 24 14 24C8.47715 24 4 19.5228 4 14C4 8.47715 8.47715 4 14 4C19.5228 4 24 8.47715 24 14ZM22.4002 25.2009C20.0603 26.9585 17.1518 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14C28 17.1519 26.9584 20.0605 25.2007 22.4004C25.2403 22.4302 25.2791 22.4617 25.317 22.4949L33.317 29.4949C34.1483 30.2222 34.2325 31.4858 33.5052 32.317C32.7778 33.1483 31.5143 33.2325 30.683 32.5052L22.683 25.5052C22.5764 25.4119 22.4821 25.3098 22.4002 25.2009Z"
+                  />
+                </svg>
+              </span>
+              <input
+                class="search__input"
+                type="search"
+                name="search-text"
+                placeholder="Поиск фильмов по жанрам и актерам"
+                aria-label="Поиск фильмов по жанрам и актерам"
+              />
+              <button
+                class="search__clear-btn"
+                type="button"
+                aria-label="Очистить поле ввода"
+              >
+                <svg
+                  class="search__clear-btn-icon"
+                  viewBox="0 0 32 32"
+                  stroke="white"
+                  stroke-opacity="0.4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2.75742 2.75732L16.0001 16M16.0001 16L29.2427 29.2426M16.0001 16L29.2427 2.75732M16.0001 16L2.75742 29.2426"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="container">
+          <ul
+            class="search__tags-list tags-list"
+            aria-label="Список тегов"
+          ></ul>
+        </div>
+      </div>
+      <div class="results">
+        <div class="container">
+          <div class="results__container">
+            <p class="results__text" id="result-text-id"></p>
+            <ul
+              class="results__movies-list movies-list"
+              aria-describedby="result-text-id"
+            ></ul>
+            <div class="results__loader-container"></div>
+            <button class="results__show-more-btn hidden" type="button">
+              Показать ещё
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <span class="copyright"
+            >&copy; <current-year>2023</current-year> Тинькофф Прокат</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
