@@ -21,4 +21,4 @@
    - Поиск регистронезависимый.
    - Результаты поиска кешируются.
 
-С готовый сайтом можно ознакомиться по [ссылке](https://andreisorvanov.github.io/User-Management/).
+С готовый сайтом можно ознакомиться по [ссылке](https://andreisorvanov.github.io/Tinkoff-Rental/).
