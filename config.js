@@ -1,5 +1,5 @@
 const API_KEY = "a65872ba";
-const BASE_URL = "http://www.omdbapi.com/";
+const BASE_URL = "https://www.omdbapi.com/";
 
 export const MOVIES_PER_PAGE = 10;
 
